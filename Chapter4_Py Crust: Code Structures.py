@@ -36,7 +36,7 @@ if some_list:
     print("There's something in here")
 else:
     print("Hey!, It's empty")
-"""
+
 
 #Repeat with while
 count = 1
@@ -69,3 +69,53 @@ while position < len(numbers):
     position += 1
 else:
     print('No even number found')
+"""
+#Iterate with for
+rabbits = ['Flopsy', 'Mopsy', 'Cottontail', 'Peter']
+for rabbit in rabbits:
+    print(rabbit)
+
+word = 'cat'
+for letter in word:
+    print(letter)
+
+accusation = {'room': 'ballroom', 'weapon': 'lead pipe', 'person': 'Col. Mustard'}
+for card in accusation:
+    print(card)
+
+for value in accusation.values():
+    print(value)
+
+for item in accusation.items():
+    print(item)
+
+for card, contents in accusation.items():
+    print('Card', card, 'has the contents', contents )
+
+cheeses = []
+for cheese in cheeses:
+    print('This shop has some lovely', cheese)
+    break
+else:
+    print('This is not much of a cheese shop, is it?')
+
+days = ['Monday','Tuesday','Wednesday']
+fruits = ['banana', 'orange', 'peach']
+drinks = ['coffee','tea','bear']
+desserts = ['tiramisu', 'ice cream','pie','pudding']
+
+for day, fruit, drink, dessert in zip(days,fruits,drinks,desserts):
+    print(day, ": drink", drink, "- eat", fruit, "- enjoy", dessert)
+
+english = 'Monday', 'Tuesday', 'Wednesday'
+french = 'Lundi', 'Mardi', 'Mercredi'
+
+print(list( zip(english,french)))
+
+print(dict( zip(english,french)))
+
+for x in range(0,3):
+    print(x)
+print(zip(english, french))
+
+
